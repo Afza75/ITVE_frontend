@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITVE - Institutes of Technical & Vocational Education</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation with hide-on-scroll functionality -->
+    <nav class="navbar navbar-hidden" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="logo">
+                    <span>ITVE</span>
+                </div>
+                <span class="brand-name">Institutes of Technical & Vocational Education</span>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#programs" class="nav-link">Programs</a>
+                <a href="#why-choose" class="nav-link">Why ITVE</a>
+                <a href="#apply" class="btn-primary">Apply Now</a>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" class="mobile-nav-link active">Home</a>
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#programs" class="mobile-nav-link">Programs</a>
+        <a href="#why-choose" class="mobile-nav-link">Why ITVE</a>
+        <a href="#success" class="mobile-nav-link">Success Stories</a>
+        <a href="#process" class="mobile-nav-link">Process</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+        <a href="#apply" class="btn-primary mobile-cta">Apply Now</a>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Pagination Dots -->
+    <div class="pagination-container" id="paginationContainer">
+        <div class="pagination-dot active" data-section="home"></div>
+        <div class="pagination-dot" data-section="about"></div>
+        <div class="pagination-dot" data-section="programs"></div>
+        <div class="pagination-dot" data-section="why-choose"></div>
+        <div class="pagination-dot" data-section="success"></div>
+        <div class="pagination-dot" data-section="process"></div>
+        <div class="pagination-dot" data-section="contact"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="page-section hero-section full-screen-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text animate-fade-in-up">
+                    <h1 class="hero-title">Build Your Future with Technical Excellence</h1>
+                    <p class="hero-description">ITVE provides industry-relevant technical and vocational education that prepares students for successful careers in Pakistan's growing economy.</p>
+                    <div class="hero-buttons">
+                        <a href="#apply" class="btn-primary">Start Your Application</a>
+                        <a href="#programs" class="btn-secondary">Explore Programs</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Programs Offered</p>
+                        </div>
+                        <div class="stat">
+                            <h3>95%</h3>
+                            <p>Employment Rate</p>
+                        </div>
+                        <div class="stat">
+                            <h3>40+</h3>
+                            <p>Industry Partners</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image animate-fade-in-up delay">
+    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+         alt="ITVE students in technical workshop"
+         onerror="this.src='https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'">
+            </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator for Hero Section -->
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About ITVE Section -->
+    <section id="about" class="page-section about-section full-screen-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About ITVE</h2>
+                <p class="section-description">The Institutes of Technical & Vocational Education (ITVE) is Pakistan's premier network of technical education institutions, dedicated to bridging the skills gap and empowering youth with practical, industry-ready expertise.</p>
+            </div>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon mission">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="feature-title">Our Mission</h3>
+                    <p class="feature-description">To provide accessible, high-quality technical education that meets international standards and addresses Pakistan's economic development needs.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon vision">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="feature-title">Our Vision</h3>
+                    <p class="feature-description">To become the leading technical education provider in South Asia, recognized for excellence in vocational training and graduate employability.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon partnership">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="feature-title">Industry Partnerships</h3>
+                    <p class="feature-description">Collaborations with leading national and international companies ensure our curriculum remains relevant and our graduates are job-ready.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="page-section programs-section full-screen-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Programs</h2>
+                <p class="section-description">Choose from a wide range of technical and vocational programs designed to meet industry demands and equip you with practical skills.</p>
+            </div>
+            
+            <div class="programs">
+                <div class="program-card">
+                    <div class="program-image it">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="program-content">
+                        <h3 class="program-title">Information Technology</h3>
+                        <p class="program-description">Software development, networking, cybersecurity, and data analytics programs.</p>
+                        <div class="program-footer">
+                            <span class="program-duration">6-24 Months</span>
+                            <a href="#" class="program-link">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="program-card">
+                    <div class="program-image engineering">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <div class="program-content">
+                        <h3 class="program-title">Engineering Technologies</h3>
+                        <p class="program-description">Civil, electrical, mechanical, and automotive engineering technology programs.</p>
+                        <div class="program-footer">
+                            <span class="program-duration">12-36 Months</span>
+                            <a href="#" class="program-link">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="program-card">
+                    <div class="program-image healthcare">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="program-content">
+                        <h3 class="program-title">Healthcare Sciences</h3>
+                        <p class="program-description">Medical laboratory technology, radiography, pharmacy technician, and nursing programs.</p>
+                        <div class="program-footer">
+                            <span class="program-duration">18-36 Months</span>
+                            <a href="#" class="program-link">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="#programs" class="btn-primary">View All Programs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose ITVE Section -->
+    <section id="why-choose" class="page-section why-section full-screen-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose ITVE?</h2>
+                <p class="section-description">Discover the advantages that make ITVE the preferred choice for technical and vocational education in Pakistan.</p>
+            </div>
+            
+            <div class="why-content">
+                <div class="why-features">
+                    <div class="why-feature">
+                        <div class="why-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="why-text">
+                            <h3 class="why-title">Industry-Relevant Curriculum</h3>
+                            <p class="why-description">Our programs are developed in collaboration with industry experts to ensure graduates possess the skills employers need.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="why-feature">
+                        <div class="why-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <div class="why-text">
+                            <h3 class="why-title">Placement Support</h3>
+                            <p class="why-description">Our dedicated placement cell assists students with internships and job placements, with a 95% success rate.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="why-feature">
+                        <div class="why-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <div class="why-text">
+                            <h3 class="why-title">Experienced Faculty</h3>
+                            <p class="why-description">Learn from industry professionals with practical experience who bring real-world insights into the classroom.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="why-feature">
+                        <div class="why-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <div class="why-text">
+                            <h3 class="why-title">Modern Facilities</h3>
+                            <p class="why-description">State-of-the-art labs, workshops, and learning spaces equipped with the latest technology and tools.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="why-image">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="ITVE student learning technical skills">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Success Section -->
+    <section id="success" class="page-section success-section full-screen-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Student Success Stories</h2>
+                <p class="section-description">Hear from our alumni who have transformed their careers through ITVE's technical education programs.</p>
+            </div>
+            
+            <div class="testimonials">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"ITVE's software development program gave me the practical skills I needed to land a job at a leading tech company just two months after graduation."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Ahmed Raza">
+                        <div class="author-info">
+                            <h4 class="author-name">Ahmed Raza</h4>
+                            <p class="author-title">Software Developer, TechSolutions Inc.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"The hands-on training in the electrical engineering program prepared me perfectly for my current role. The instructors were industry professionals who shared real-world insights."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Fatima Khan">
+                        <div class="author-info">
+                            <h4 class="author-name">Fatima Khan</h4>
+                            <p class="author-title">Electrical Technician, PowerGrid Ltd.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"As a medical lab technologist graduate, I was immediately hired by a reputable hospital. The curriculum was comprehensive and the lab facilities were excellent."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Bilal Ahmed">
+                        <div class="author-info">
+                            <h4 class="author-name">Bilal Ahmed</h4>
+                            <p class="author-title">Lab Technologist, City Medical Complex</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Process Section -->
+    <section id="process" class="page-section process-section full-screen-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Simple Application Process</h2>
+                <p class="section-description">Follow these four simple steps to begin your journey at ITVE and transform your career.</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Explore Programs</h3>
+                    <p class="step-description">Browse our catalog of 50+ programs to find the one that matches your career goals.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Submit Application</h3>
+                    <p class="step-description">Complete our online application form with your educational and personal details.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Admission Interview</h3>
+                    <p class="step-description">Attend an interview with our admissions committee (in-person or virtual).</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3 class="step-title">Enroll & Begin</h3>
+                    <p class="step-description">Complete enrollment formalities and begin your transformative educational journey.</p>
+                </div>
+            </div>
+            
+            <div class="process-cta">
+                <a href="#apply" class="btn-primary">Start Your Application Today</a>
+                <p class="cta-note">Applications for the next semester close on <strong>December 15, 2023</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="page-section contact-section full-screen-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact ITVE</h2>
+                <p class="section-description">Have questions about our programs or the application process? Get in touch with our admissions team.</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3 class="contact-title">Visit Our Campus</h3>
+                            <p class="contact-detail">123 Education Street, Karachi, Pakistan</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3 class="contact-title">Call Us</h3>
+                            <p class="contact-detail">+92-21-1234567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3 class="contact-title">Email Us</h3>
+                            <p class="contact-detail">admissions@itve.pk</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3 class="contact-title">Office Hours</h3>
+                            <p class="contact-detail">Monday - Friday: 9:00 AM - 5:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form id="inquiryForm" class="contact-form">
+                        <h3 class="form-title">Send Us a Message</h3>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span>ITVE</span>
+                    </div>
+                    <p class="footer-description">Empowering Pakistan's youth with industry-ready technical skills since 2005.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <a href="#home" class="footer-link">Home</a>
+                    <a href="#about" class="footer-link">About ITVE</a>
+                    <a href="#programs" class="footer-link">Programs</a>
+                    <a href="#why-choose" class="footer-link">Why Choose Us</a>
+                    <a href="#apply" class="footer-link">Apply Now</a>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-title">Programs</h3>
+                    <a href="#" class="footer-link">Information Technology</a>
+                    <a href="#" class="footer-link">Engineering Technologies</a>
+                    <a href="#" class="footer-link">Healthcare Sciences</a>
+                    <a href="#" class="footer-link">Business & Management</a>
+                    <a href="#" class="footer-link">Creative Arts & Design</a>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-title">Resources</h3>
+                    <a href="#" class="footer-link">Admissions Guide</a>
+                    <a href="#" class="footer-link">Scholarships</a>
+                    <a href="#" class="footer-link">Career Services</a>
+                    <a href="#" class="footer-link">FAQ</a>
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2023 Institutes of Technical & Vocational Education (ITVE). All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Application Modal -->
+    <div id="applyModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Start Your Application</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-description">Complete this form to begin your application process for ITVE. Our admissions team will contact you within 2 business days.</p>
+                <form id="applicationForm" class="application-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="program">Program of Interest *</label>
+                        <select id="program" required>
+                            <option value="">Select a program</option>
+                            <option value="it">Information Technology</option>
+                            <option value="engineering">Engineering Technologies</option>
+                            <option value="healthcare">Healthcare Sciences</option>
+                            <option value="business">Business & Management</option>
+                            <option value="design">Creative Arts & Design</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Additional Information</label>
+                        <textarea id="message" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
